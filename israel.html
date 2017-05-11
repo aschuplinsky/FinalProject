@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Anna Schuplinsky -->
+<html>
+  <head>
+    <link rel="stylesheet" href="tabs.css" />
+     <title>Israel Quiz</title>
+     <meta charset="UTF-8">
+   </head>
+  <body lang="en-US">
+    <nav>
+      <div>
+        <a href="new.html">Israel</a>
+      </div>
+      <div>
+        <a href="israel.html">Israel Quiz</a>
+      </div>
+    </nav>
+    <h1>
+      <span class="serif">What do you know about Israel?</span>
+    </h1>
+    <span class="sansserif">
+    <p> Here's a few questions about Israel, let's see how much you know!</p>
+      <nav>There are four countries that imediately surround israel!
+      </nav>
+      <article onload="main();"><div class="container-fluid">
+        <form class="form-horizontal">
+              <label for="colorText" class="col-sm-2 control-label">What are the surounding countries that touch israel? Fill in the blank.</label>
+          <div class="col-sm-8">
+            <div>
+              Egypt
+            </div>
+            <div>
+              Jordan
+            </div>
+            <div>
+              Syria
+            </div>
+            <div class="textbox">
+              <div class="form-group" id="countryGroup">
+                <div class="col-sm-8">
+                  <input type="text" id="cou" class="form-control input-md"
+                      placeholder="What is the correct country" />
+                  <span id="countryError" class="control-label hidden-message">
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div></article>
+    <nav>In 1948, 5 months after Israel became a country, the flag was created.
+    </nav>
+      <article onload="israel();"><div class="container-fluid">
+        <form class="form-horizontal">
+              <label for="colorText" class="col-sm-2 control-label">What is the symbol on the Israeli flag?</label>
+          <div class="col-sm-8">
+            <div class="textbox">
+              <div class="form-group" id="flagGroup">
+                <div class="col-sm-8">
+                  <input type="text" id="flag" class="form-control input-md"
+                      placeholder="What is the correct symbol" />
+                  <span id="flagError" class="control-label hidden-message">
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div></article>
+      <p>Now that you know more about Israel, you should visit. Here's a great place to visit:
+      <input type="button" id="btnSearch" value="Click Here" onclick="state();" />
+      <div id="message">
+      </div></p>
+      <h1><img onmouseover="bigImg()" onmouseout="normalImg()" src="https://lifeasahuman.com/files/2010/09/cartoon-airplane.jpg" alt="Plane" width="60" height="50"></h1>
+    </span>
+    <h2> Font color from: <a href="https://www.w3schools.com/colors/colors_names.asp">W3Schools</h2>
+  </body>
+</html>
